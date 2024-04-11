@@ -28,7 +28,7 @@ namespace Sen_s_final_presentation
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            Employee.UpdateEmployee();
+            this.Control_dashboard.UpdateEmployee();
             dashboard1.Visible = true;
             employee1.Visible = false;
 

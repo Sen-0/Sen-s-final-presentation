@@ -38,7 +38,7 @@
             this.Dashboard_btn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.dashboard1 = new Sen_s_final_presentation.Dashboard();
+            this.dashboard1 = new Sen_s_final_presentation.Control_Dashboard();
             this.employee1 = new Sen_s_final_presentation.Employee();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
@@ -203,7 +203,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Dashboard dashboard1;
+        private Control_Dashboard dashboard1;
         private Employee employee1;
     }
 }

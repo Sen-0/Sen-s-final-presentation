@@ -16,9 +16,9 @@ using Sen_s_final_presentation.EMSDataSet1TableAdapters;
 
 namespace Sen_s_final_presentation
 {
-    public partial class Dashboard : UserControl
+    public partial class Control_Dashboard : UserControl
     {
-        public Dashboard()
+        public Control_Dashboard()
         {
             InitializeComponent();
 

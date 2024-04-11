@@ -1,6 +1,6 @@
 ﻿namespace Sen_s_final_presentation
 {
-    partial class Dashboard
+    partial class Control_Dashboard
     {
         /// <summary> 
         /// Required designer variable.
@@ -80,14 +80,14 @@
             this.guna2HtmlLabel1.TabIndex = 0;
             this.guna2HtmlLabel1.Text = "Total Employees";
             // 
-            // Dashboard
+            // Control_Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2CirclePictureBox1);
-            this.Name = "Dashboard";
+            this.Name = "Control_Dashboard";
             this.Size = new System.Drawing.Size(684, 561);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
