@@ -18,6 +18,7 @@ namespace Sen_s_final_presentation
         public Employee()
         {
             InitializeComponent();
+            BindData();
         }
         SqlConnection conn = new SqlConnection("Data Source=DESKTOP-CPPCSH9\\SQLEXPRESS;Initial Catalog=EMS;Integrated Security=True;Encrypt=False");
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -91,7 +92,7 @@ namespace Sen_s_final_presentation
                 command.Parameters.AddWithValue("@EMP_JOB_POSITION", Employee_JobBox.Text);
                 command.ExecuteNonQuery();
                 conn.Close();
-                BindData();
+                
                 MessageBox.Show("Data Updated Successfully.", "Data");
                 Employee_IDbox.Text = "";
                 Employee_Namebox.Text = "";

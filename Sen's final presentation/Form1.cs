@@ -21,6 +21,7 @@ namespace Sen_s_final_presentation
             this.Close();
         }
 
+
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             Form2 form2 = new Form2();
