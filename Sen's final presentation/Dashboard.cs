@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Data;
 using System.Data.SqlClient;
 using Guna.UI2.WinForms;
+using Sen_s_final_presentation.EMSDataSet1TableAdapters;
 
 
 namespace Sen_s_final_presentation
@@ -20,10 +21,10 @@ namespace Sen_s_final_presentation
         public Dashboard()
         {
             InitializeComponent();
-            string EmployeeCount = this.GetCount("EMPLOYEE_FIRST").ToString();
-            Tot_emp_count.Text = $"Total Employees ${EmployeeCount}"            
-        }
 
+            string EmployeeCount = this.GetCount("EMPLOYEE_FIRST").ToString();
+            Tot_emp_label.Text = $"{EmployeeCount}";      
+        }
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -43,6 +44,10 @@ namespace Sen_s_final_presentation
             }
             sqlConnection.Close();
             return Count;
+        }
+        public void UpdateEmployee()
+        {
+            this.Tot_emp_label.Text = GetCount("EMPLOYEE_FIRST").ToString() ;
         }
     }
 }

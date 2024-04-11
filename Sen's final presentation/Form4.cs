@@ -15,6 +15,8 @@ namespace Sen_s_final_presentation
         public Form4()
         {
             InitializeComponent();
+
+
         }
 
         private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
@@ -26,8 +28,10 @@ namespace Sen_s_final_presentation
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            Employee.UpdateEmployee();
             dashboard1.Visible = true;
             employee1.Visible = false;
+
         }
         private void guna2Button2_Click(object sender, EventArgs e)
         {
