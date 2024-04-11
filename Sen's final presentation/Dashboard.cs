@@ -20,9 +20,8 @@ namespace Sen_s_final_presentation
         public Dashboard()
         {
             InitializeComponent();
-
-            
-
+            string EmployeeCount = this.GetCount("EMPLOYEE_FIRST").ToString();
+            Tot_emp_count.Text = $"Total Employees ${EmployeeCount}"            
         }
 
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
@@ -34,7 +33,7 @@ namespace Sen_s_final_presentation
             int Count = 0;
             SqlConnection sqlConnection = new SqlConnection("Data Source=DESKTOP-CPPCSH9\\SQLEXPRESS;Initial Catalog=EMS;Integrated Security=True;Encrypt=False");
             sqlConnection.Open();
-            SqlCommand cmd = new SqlCommand($"SELECT Count(*) FROM {"EMPLOYEE_FIRST"}", sqlConnection);
+            SqlCommand cmd = new SqlCommand($"SELECT Count(*) FROM {TableName}", sqlConnection);
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
