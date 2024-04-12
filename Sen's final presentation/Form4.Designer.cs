@@ -40,6 +40,7 @@
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.dashboard1 = new Sen_s_final_presentation.Control_Dashboard();
             this.employee1 = new Sen_s_final_presentation.Employee();
+            this.salary1 = new Sen_s_final_presentation.Salary();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
@@ -95,7 +96,7 @@
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.Size = new System.Drawing.Size(180, 45);
             this.guna2Button3.TabIndex = 2;
-            this.guna2Button3.Text = "CREATE";
+            this.guna2Button3.Text = "SALARY";
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // Employee_btn
@@ -138,6 +139,7 @@
             // 
             this.guna2Panel2.Controls.Add(this.dashboard1);
             this.guna2Panel2.Controls.Add(this.employee1);
+            this.guna2Panel2.Controls.Add(this.salary1);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel2.Location = new System.Drawing.Point(300, 0);
             this.guna2Panel2.Name = "guna2Panel2";
@@ -173,6 +175,13 @@
             this.employee1.Size = new System.Drawing.Size(684, 561);
             this.employee1.TabIndex = 0;
             // 
+            // salary1
+            // 
+            this.salary1.Location = new System.Drawing.Point(0, 0);
+            this.salary1.Name = "salary1";
+            this.salary1.Size = new System.Drawing.Size(684, 561);
+            this.salary1.TabIndex = 2;
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -205,5 +214,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Control_Dashboard dashboard1;
         private Employee employee1;
+        private Salary salary1;
     }
 }

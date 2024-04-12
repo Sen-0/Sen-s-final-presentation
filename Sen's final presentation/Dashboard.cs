@@ -8,8 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data;
-using System.Data.SqlClient;
 using Guna.UI2.WinForms;
 using Sen_s_final_presentation.EMSDataSet1TableAdapters;
 

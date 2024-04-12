@@ -28,19 +28,23 @@ namespace Sen_s_final_presentation
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            this.Control_dashboard.UpdateEmployee();
+            this.dashboard1.UpdateEmployee();
             dashboard1.Visible = true;
             employee1.Visible = false;
+            salary1.Visible = false;
 
         }
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             dashboard1.Visible = false;
             employee1.Visible = true;
+            salary1.Visible = false;
         }
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            
+            dashboard1.Visible = false;
+            employee1.Visible = false;
+            salary1.Visible = true;
         }
     }
 }

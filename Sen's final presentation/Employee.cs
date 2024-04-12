@@ -59,9 +59,9 @@ namespace Sen_s_final_presentation
                     MessageBox.Show("Fill in the blanks.", "Add data");
                 }
             }
-            catch
+            catch (Exception ex)
             {
-                MessageBox.Show("error");
+                MessageBox.Show(ex.Message);
             }
         }
         void BindData()
@@ -122,11 +122,12 @@ namespace Sen_s_final_presentation
                     conn.Close();
                     MessageBox.Show("Data successfully deleted!");
                     BindData();
+                    conn.Close();
                 }
             }
             else
             {
-                MessageBox.Show("Put product ID.");
+                MessageBox.Show("Put Employee ID.");
             }
         }
     }
