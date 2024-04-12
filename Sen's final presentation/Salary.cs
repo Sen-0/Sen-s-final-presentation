@@ -19,9 +19,8 @@ namespace Sen_s_final_presentation
             BindData();
         }
         SqlConnection conn = new SqlConnection("Data Source=DESKTOP-CPPCSH9\\SQLEXPRESS;Initial Catalog=EMS;Integrated Security=True;Encrypt=False");
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e) //update s
         {
-           
                 try
                 {
                     if (Employee_IDbox.Text != "" && Salary_Box.Text != "")

@@ -1,6 +1,6 @@
 ﻿namespace Sen_s_final_presentation
 {
-    partial class Form2
+    partial class Login
     {
         /// <summary>
         /// Required designer variable.

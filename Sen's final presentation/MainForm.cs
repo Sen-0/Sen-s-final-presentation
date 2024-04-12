@@ -10,25 +10,22 @@ using System.Windows.Forms;
 
 namespace Sen_s_final_presentation
 {
-    public partial class Form4 : Form
+    public partial class MainForm : Form
     {
-        public Form4()
+        public MainForm()
         {
             InitializeComponent();
-
-
         }
-
         private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
+            Welcome form1 = new Welcome(); //exit
             form1.Show();
             this.Hide();
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            this.dashboard1.UpdateEmployee();
+            this.dashboard1.UpdateEmployee(); //shows dashB
             dashboard1.Visible = true;
             employee1.Visible = false;
             salary1.Visible = false;
@@ -36,13 +33,13 @@ namespace Sen_s_final_presentation
         }
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            dashboard1.Visible = false;
+            dashboard1.Visible = false; //shows Emp
             employee1.Visible = true;
             salary1.Visible = false;
         }
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            dashboard1.Visible = false;
+            dashboard1.Visible = false; //Shows Sal
             employee1.Visible = false;
             salary1.Visible = true;
         }

@@ -21,18 +21,16 @@ namespace Sen_s_final_presentation
             BindData();
         }
         SqlConnection conn = new SqlConnection("Data Source=DESKTOP-CPPCSH9\\SQLEXPRESS;Initial Catalog=EMS;Integrated Security=True;Encrypt=False");
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)  //insert process
         {
-
             try
             {
                 if (Employee_IDbox.Text != "" && Employee_Namebox.Text != "" && Employee_Agebox.Text != "" && Employee_emailBox.Text != "" && Employee_Contactnobox.Text != ""
                     && Employee_addressbox.Text != "" && Employee_genderbox.Text != "" && Employee_JobBox.Text != "")
                 {
-
                     conn.Open();
                     SqlCommand command = new SqlCommand("INSERT INTO EMPLOYEE_FIRST VALUES (@EMP_ID,@EMP_NAME,@EMP_AGE, " +
-                        "@EMP_EMAIL, @EMP_CONTACT, @EMP_ADDRESS, @EMP_GENDER, @EMP_JOB_POSITION )", conn);
+                        "@EMP_EMAIL, @EMP_CONTACT, @EMP_ADDRESS, @EMP_GENDER, @EMP_JOB_POSITION, @EMP_SALARY )", conn);
                     command.Parameters.AddWithValue("@EMP_ID", int.Parse(Employee_IDbox.Text));
                     command.Parameters.AddWithValue("@EMP_NAME", Employee_Namebox.Text);
                     command.Parameters.AddWithValue("@EMP_AGE", int.Parse(Employee_Agebox.Text));
@@ -41,10 +39,11 @@ namespace Sen_s_final_presentation
                     command.Parameters.AddWithValue("@EMP_ADDRESS", Employee_addressbox.Text);
                     command.Parameters.AddWithValue("@EMP_GENDER", Employee_genderbox.Text);
                     command.Parameters.AddWithValue("@EMP_JOB_POSITION", Employee_JobBox.Text);
+                    command.Parameters.AddWithValue("@EMP_SALARY", 0);
                     command.ExecuteNonQuery();
                     conn.Close();
                     BindData();
-                    MessageBox.Show("Data inserted Successfully.");
+                    MessageBox.Show("Data inserted Successfully.","Data");
                     Employee_IDbox.Text = "";
                     Employee_Namebox.Text = "";
                     Employee_Agebox.Text = "";
@@ -56,7 +55,7 @@ namespace Sen_s_final_presentation
                 }
                 else
                 {
-                    MessageBox.Show("Fill in the blanks.", "Add data");
+                    MessageBox.Show("Fill in the blanks.", "Error");
                 }
             }
             catch (Exception ex)
@@ -64,21 +63,19 @@ namespace Sen_s_final_presentation
                 MessageBox.Show(ex.Message);
             }
         }
-        void BindData()
+        void BindData() //binding data to the gridview
         {
             SqlCommand command = new SqlCommand("SELECT * FROM EMPLOYEE_FIRST", conn);
             SqlDataAdapter sd = new SqlDataAdapter(command);
             DataTable dt = new DataTable();
             sd.Fill(dt);
             guna2DataGridView1.DataSource = dt;
-
         }
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void guna2Button2_Click(object sender, EventArgs e) //update process
         {
             if  (Employee_IDbox.Text != "" && Employee_Namebox.Text != "" && Employee_Agebox.Text != "" && Employee_emailBox.Text != "" && Employee_Contactnobox.Text != ""
                     && Employee_addressbox.Text != "" && Employee_genderbox.Text != "" && Employee_JobBox.Text != "")
             {
-
                 conn.Open();
                 String BaseQuery = "UPDATE EMPLOYEE_FIRST SET EMP_NAME = @EMP_NAME, EMP_AGE = @EMP_AGE, EMP_EMAIL =  @EMP_EMAIL, EMP_CONTACT = @EMP_CONTACT, EMP_ADDRESS = @EMP_ADDRESS, EMP_GENDER = @EMP_GENDER, EMP_JOB_POSITION = @EMP_JOB_POSITION";
                 String Condition = $"WHERE EMP_ID=${int.Parse(Employee_IDbox.Text)}";
@@ -92,7 +89,7 @@ namespace Sen_s_final_presentation
                 command.Parameters.AddWithValue("@EMP_JOB_POSITION", Employee_JobBox.Text);
                 command.ExecuteNonQuery();
                 conn.Close();
-                
+                BindData();
                 MessageBox.Show("Data Updated Successfully.", "Data");
                 Employee_IDbox.Text = "";
                 Employee_Namebox.Text = "";
@@ -105,11 +102,10 @@ namespace Sen_s_final_presentation
             }
             else
             {
-                MessageBox.Show("Fill in the blanks.");
+                MessageBox.Show("Fill in the blanks.","Error");
             }
         }
-
-        private void guna2Button3_Click(object sender, EventArgs e)
+        private void guna2Button3_Click(object sender, EventArgs e)  //delete process
         {
             if
                 (Employee_IDbox.Text != "")
@@ -120,14 +116,14 @@ namespace Sen_s_final_presentation
                     SqlCommand command = new SqlCommand("Delete EMPLOYEE_FIRST WHERE EMP_ID = '" + int.Parse(Employee_IDbox.Text) + "'", conn);
                     command.ExecuteNonQuery();
                     conn.Close();
-                    MessageBox.Show("Data successfully deleted!");
+                    MessageBox.Show("Data successfully deleted!","Successful");
                     BindData();
                     conn.Close();
                 }
             }
             else
             {
-                MessageBox.Show("Put Employee ID.");
+                MessageBox.Show("Put Employee ID.","Error");
             }
         }
     }

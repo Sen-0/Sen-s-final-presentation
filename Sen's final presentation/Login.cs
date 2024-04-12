@@ -14,9 +14,9 @@ using Guna.UI2.WinForms;
 
 namespace Sen_s_final_presentation
 {
-    public partial class Form2 : Form
+    public partial class Login : Form
     {
-        public Form2()
+        public Login()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace Sen_s_final_presentation
 
         private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
+            Welcome form1 = new Welcome(); //exit
             form1.Show();
             this.Hide();
         }
@@ -41,26 +41,19 @@ namespace Sen_s_final_presentation
                 DataTable dataTable = new DataTable();
                 sda.Fill(dataTable);
 
-                
                 if (dataTable.Rows.Count > 0)
                 {
                     username = guna2TextBox1.Text;
                     password = guna2TextBox2.Text;
-
-                    
-
                     //page that loads next
-                    Form4 form4 = new Form4();
+                    MainForm form4 = new MainForm();
                     form4.Show();
                     this.Hide();
-
-
                 }
                 else
                 {
-                    //this will clear
-                    guna2HtmlLabel7.Text = "Wrong user name or password";
-                    guna2HtmlLabel7.ForeColor = Color.Red;
+                    //this will clear out the text boxes
+                    MessageBox.Show("Wrong Username or Password", "Try again");
                     guna2TextBox1.Clear();
                     guna2TextBox2.Clear();
                     //to focus
@@ -69,25 +62,13 @@ namespace Sen_s_final_presentation
             }
             catch
             {
-                guna2HtmlLabel7.Text = "error";
+                guna2HtmlLabel7.Text = "Error";
+                guna2HtmlLabel7.ForeColor = Color.Red;
             }
             finally
             {
                 conn.Close();
             }
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2CustomRadioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-                
-            
         }
     }
-    
 }

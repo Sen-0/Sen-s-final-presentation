@@ -10,28 +10,28 @@ using System.Windows.Forms;
 
 namespace Sen_s_final_presentation
 {
-    public partial class Form1 : Form
+    public partial class Welcome : Form
     {
-        public Form1()
+        public Welcome()
         {
             InitializeComponent();
         }
         private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Close(); //exit
         }
 
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
+            Login form2 = new Login();  //goes to login
             form2.Show();
             this.Hide();
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3();
+            Form3 form3 = new Form3(); //goes to Sign Up
             form3.Show();
             this.Hide();
         }

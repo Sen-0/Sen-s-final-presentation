@@ -19,13 +19,8 @@ namespace Sen_s_final_presentation
         public Control_Dashboard()
         {
             InitializeComponent();
-
             string EmployeeCount = this.GetCount("EMPLOYEE_FIRST").ToString();
             Tot_emp_label.Text = $"{EmployeeCount}";      
-        }
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
         public int GetCount(string TableName)
         {
@@ -37,15 +32,14 @@ namespace Sen_s_final_presentation
             while (reader.Read())
             {
                 Count = Convert.ToInt32(reader.GetValue(0).ToString());
-                Tot_emp_label.Text = Count.ToString();
-
+                Tot_emp_label.Text = Count.ToString(); //connected the count to label
             }
             sqlConnection.Close();
             return Count;
         }
         public void UpdateEmployee()
         {
-            this.Tot_emp_label.Text = GetCount("EMPLOYEE_FIRST").ToString() ;
+            this.Tot_emp_label.Text = GetCount("EMPLOYEE_FIRST").ToString() ; //this will refresh
         }
     }
 }

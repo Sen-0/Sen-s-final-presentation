@@ -21,18 +21,18 @@ namespace Sen_s_final_presentation
 
         private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
+            Welcome form1 = new Welcome(); //exit
             form1.Show();
             this.Hide();
         }
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e) //registration
         {
             try
             {
                 if(User_Name.Text!="" && Password_Textbox.Text!="" && Confirm_Password_Textbox.Text!="" && Country_Textbox.Text!="" && BirthDate_picker.Text!=""
                     && Email_Address_Textbox.Text!="" && Address_Textbox.Text!="" && Gender_Picker.Text!="")
                 {
-                    if (!guna2CustomRadioButton1.Checked)
+                    if (!guna2CustomRadioButton1.Checked) //terms and cond btn check, used ! to invert
                     {
                         a.Text = "Please accept terms and Conditions";
                         a.ForeColor = Color.Red;
@@ -41,7 +41,7 @@ namespace Sen_s_final_presentation
                     }
                     if (Password_Textbox.Text != Confirm_Password_Textbox.Text)
                     {
-                        MessageBox.Show("Password Do Not Match!");
+                        MessageBox.Show("Password Do Not Match!", "Error");
                         return;
                     }
           
@@ -57,7 +57,7 @@ namespace Sen_s_final_presentation
                     command.Parameters.AddWithValue("@Password", Password_Textbox.Text);
                     command.ExecuteNonQuery();
                     conn.Close();
-                    MessageBox.Show("Registered Successfully!");
+                    MessageBox.Show("Registered Successfully!","Completed");
                     User_Name_Textbox.Text = "";
                     BirthDate_picker.Text = "";
                     Gender_Picker.Text = "";
@@ -66,14 +66,14 @@ namespace Sen_s_final_presentation
                     Email_Address_Textbox.Text = "";
                     Password_Textbox.Text = "";
                     Confirm_Password_Textbox.Text = "";
-                    Form2 form2 = new Form2();
+                    Login form2 = new Login(); //after confirmed, goes to the login
                     form2.Show();
                     this.Close();
 
                 }
                 else
                 {
-                    MessageBox.Show("fill in the blanks");
+                    MessageBox.Show("fill in the blanks", "Error");
                 }
             }
             catch(Exception ex)
@@ -81,12 +81,6 @@ namespace Sen_s_final_presentation
                 MessageBox.Show("Error : " + ex.Message);
             }
         }
-       
-        private void guna2TextBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void guna2CustomRadioButton1_CheckedChanged(object sender, EventArgs e)
         {
             if (guna2CustomRadioButton1.Checked)
@@ -98,10 +92,9 @@ namespace Sen_s_final_presentation
                 Signup_btn.Enabled = false;
             }
         }
-
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D");
+            System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"); //terms
         }
     }
 }

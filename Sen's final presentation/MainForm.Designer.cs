@@ -1,6 +1,6 @@
 ﻿namespace Sen_s_final_presentation
 {
-    partial class Form4
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
