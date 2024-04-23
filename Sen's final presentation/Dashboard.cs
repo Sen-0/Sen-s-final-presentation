@@ -41,5 +41,12 @@ namespace Sen_s_final_presentation
         {
             this.Tot_emp_label.Text = GetCount("EMPLOYEE_FIRST").ToString() ; //this will refresh
         }
+
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+            Employees form = new Employees();
+            form.Show();
+            this.Hide();
+        }
     }
 }

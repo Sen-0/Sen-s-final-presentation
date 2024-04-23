@@ -29,6 +29,7 @@ namespace Sen_s_final_presentation
             dashboard1.Visible = true;
             employee1.Visible = false;
             salary1.Visible = false;
+            EmployeeReview1.Visible = false;
 
         }
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -36,12 +37,22 @@ namespace Sen_s_final_presentation
             dashboard1.Visible = false; //shows Emp
             employee1.Visible = true;
             salary1.Visible = false;
+            EmployeeReview1.Visible = false;
         }
         private void guna2Button3_Click(object sender, EventArgs e)
         {
             dashboard1.Visible = false; //Shows Sal
             employee1.Visible = false;
             salary1.Visible = true;
+            EmployeeReview1.Visible = false;
+        }
+
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+            dashboard1.Visible = false;
+            employee1.Visible = false;
+            salary1.Visible = false;
+            EmployeeReview1.Visible = true;
         }
     }
 }

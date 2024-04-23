@@ -33,6 +33,8 @@
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.Login_btn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -41,8 +43,6 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1.SuspendLayout();
@@ -79,6 +79,28 @@
             this.guna2Panel1.Size = new System.Drawing.Size(376, 561);
             this.guna2Panel1.TabIndex = 0;
             // 
+            // guna2HtmlLabel5
+            // 
+            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(146)))));
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(147, 417);
+            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(84, 34);
+            this.guna2HtmlLabel5.TabIndex = 13;
+            this.guna2HtmlLabel5.Text = "System";
+            // 
+            // guna2HtmlLabel3
+            // 
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(146)))));
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(53, 374);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(272, 34);
+            this.guna2HtmlLabel3.TabIndex = 12;
+            this.guna2HtmlLabel3.Text = "Employee Management";
+            // 
             // guna2HtmlLabel4
             // 
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
@@ -102,6 +124,7 @@
             this.Login_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(138)))), ((int)(((byte)(173)))));
             this.Login_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Login_btn.ForeColor = System.Drawing.Color.White;
+            this.Login_btn.IndicateFocus = true;
             this.Login_btn.Location = new System.Drawing.Point(609, 380);
             this.Login_btn.Name = "Login_btn";
             this.Login_btn.Size = new System.Drawing.Size(180, 45);
@@ -113,6 +136,7 @@
             // 
             this.guna2TextBox1.Animated = true;
             this.guna2TextBox1.AutoRoundedCorners = true;
+            this.guna2TextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(138)))), ((int)(((byte)(173)))));
             this.guna2TextBox1.BorderRadius = 17;
             this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox1.DefaultText = "";
@@ -126,7 +150,7 @@
             this.guna2TextBox1.Location = new System.Drawing.Point(582, 178);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
+            this.guna2TextBox1.PlaceholderText = "Type user name here";
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.Size = new System.Drawing.Size(235, 36);
             this.guna2TextBox1.TabIndex = 3;
@@ -135,6 +159,7 @@
             // 
             this.guna2TextBox2.Animated = true;
             this.guna2TextBox2.AutoRoundedCorners = true;
+            this.guna2TextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(138)))), ((int)(((byte)(173)))));
             this.guna2TextBox2.BorderRadius = 17;
             this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox2.DefaultText = "";
@@ -148,7 +173,7 @@
             this.guna2TextBox2.Location = new System.Drawing.Point(582, 279);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '●';
-            this.guna2TextBox2.PlaceholderText = "";
+            this.guna2TextBox2.PlaceholderText = "Type password here";
             this.guna2TextBox2.SelectedText = "";
             this.guna2TextBox2.Size = new System.Drawing.Size(235, 36);
             this.guna2TextBox2.TabIndex = 4;
@@ -197,28 +222,6 @@
             this.guna2HtmlLabel7.TabIndex = 12;
             this.guna2HtmlLabel7.Text = "Welcome";
             // 
-            // guna2HtmlLabel5
-            // 
-            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(146)))));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(147, 417);
-            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(84, 34);
-            this.guna2HtmlLabel5.TabIndex = 13;
-            this.guna2HtmlLabel5.Text = "System";
-            // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(146)))));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(53, 374);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(272, 34);
-            this.guna2HtmlLabel3.TabIndex = 12;
-            this.guna2HtmlLabel3.Text = "Employee Management";
-            // 
             // guna2CirclePictureBox1
             // 
             this.guna2CirclePictureBox1.Image = global::Sen_s_final_presentation.Properties.Resources.Exit2;
@@ -243,7 +246,7 @@
             this.guna2PictureBox1.TabIndex = 7;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // Form2
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -258,7 +261,7 @@
             this.Controls.Add(this.Login_btn);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form2";
+            this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.guna2Panel1.ResumeLayout(false);

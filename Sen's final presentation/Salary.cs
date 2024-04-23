@@ -19,7 +19,7 @@ namespace Sen_s_final_presentation
             BindData();
         }
         SqlConnection conn = new SqlConnection("Data Source=DESKTOP-CPPCSH9\\SQLEXPRESS;Initial Catalog=EMS;Integrated Security=True;Encrypt=False");
-        private void guna2Button1_Click(object sender, EventArgs e) //update s
+        private void guna2Button1_Click(object sender, EventArgs e) //update salary
         {
                 try
                 {
@@ -59,7 +59,7 @@ namespace Sen_s_final_presentation
             guna2DataGridView1.DataSource = dt;
 
         }
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void guna2Button2_Click(object sender, EventArgs e) //clear salary
         {
             if
                 (Employee_IDbox.Text != "")

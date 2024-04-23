@@ -32,7 +32,11 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.User_Name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.Password_Textbox = new Guna.UI2.WinForms.Guna2TextBox();
@@ -55,10 +59,6 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.a = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -88,6 +88,28 @@
             this.guna2Panel1.Size = new System.Drawing.Size(376, 561);
             this.guna2Panel1.TabIndex = 0;
             // 
+            // guna2HtmlLabel5
+            // 
+            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(146)))));
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(147, 417);
+            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(84, 34);
+            this.guna2HtmlLabel5.TabIndex = 12;
+            this.guna2HtmlLabel5.Text = "System";
+            // 
+            // guna2HtmlLabel3
+            // 
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(146)))));
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(53, 374);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(272, 34);
+            this.guna2HtmlLabel3.TabIndex = 11;
+            this.guna2HtmlLabel3.Text = "Employee Management";
+            // 
             // guna2HtmlLabel4
             // 
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
@@ -98,6 +120,30 @@
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(49, 32);
             this.guna2HtmlLabel4.TabIndex = 7;
             this.guna2HtmlLabel4.Text = "Back";
+            // 
+            // guna2CirclePictureBox1
+            // 
+            this.guna2CirclePictureBox1.Image = global::Sen_s_final_presentation.Properties.Resources.Exit2;
+            this.guna2CirclePictureBox1.ImageRotate = 0F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(14, 493);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(54, 54);
+            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2CirclePictureBox1.TabIndex = 6;
+            this.guna2CirclePictureBox1.TabStop = false;
+            this.guna2CirclePictureBox1.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::Sen_s_final_presentation.Properties.Resources.earth_new1;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(31, 57);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(310, 328);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 10;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // guna2HtmlLabel2
             // 
@@ -125,6 +171,7 @@
             // 
             this.Password_Textbox.Animated = true;
             this.Password_Textbox.AutoRoundedCorners = true;
+            this.Password_Textbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(138)))), ((int)(((byte)(173)))));
             this.Password_Textbox.BorderRadius = 17;
             this.Password_Textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Password_Textbox.DefaultText = "";
@@ -138,7 +185,7 @@
             this.Password_Textbox.Location = new System.Drawing.Point(427, 220);
             this.Password_Textbox.Name = "Password_Textbox";
             this.Password_Textbox.PasswordChar = '●';
-            this.Password_Textbox.PlaceholderText = "";
+            this.Password_Textbox.PlaceholderText = "Type password here";
             this.Password_Textbox.SelectedText = "";
             this.Password_Textbox.Size = new System.Drawing.Size(235, 36);
             this.Password_Textbox.TabIndex = 10;
@@ -148,6 +195,7 @@
             // 
             this.User_Name_Textbox.Animated = true;
             this.User_Name_Textbox.AutoRoundedCorners = true;
+            this.User_Name_Textbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(138)))), ((int)(((byte)(173)))));
             this.User_Name_Textbox.BorderRadius = 17;
             this.User_Name_Textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.User_Name_Textbox.DefaultText = "";
@@ -161,7 +209,7 @@
             this.User_Name_Textbox.Location = new System.Drawing.Point(427, 147);
             this.User_Name_Textbox.Name = "User_Name_Textbox";
             this.User_Name_Textbox.PasswordChar = '\0';
-            this.User_Name_Textbox.PlaceholderText = "";
+            this.User_Name_Textbox.PlaceholderText = "Type name here";
             this.User_Name_Textbox.SelectedText = "";
             this.User_Name_Textbox.Size = new System.Drawing.Size(235, 36);
             this.User_Name_Textbox.TabIndex = 9;
@@ -178,6 +226,7 @@
             this.Signup_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(138)))), ((int)(((byte)(173)))));
             this.Signup_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Signup_btn.ForeColor = System.Drawing.Color.White;
+            this.Signup_btn.IndicateFocus = true;
             this.Signup_btn.Location = new System.Drawing.Point(766, 492);
             this.Signup_btn.Name = "Signup_btn";
             this.Signup_btn.Size = new System.Drawing.Size(180, 45);
@@ -222,6 +271,7 @@
             // 
             this.Address_Textbox.Animated = true;
             this.Address_Textbox.AutoRoundedCorners = true;
+            this.Address_Textbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(138)))), ((int)(((byte)(173)))));
             this.Address_Textbox.BorderRadius = 17;
             this.Address_Textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Address_Textbox.DefaultText = "";
@@ -235,7 +285,7 @@
             this.Address_Textbox.Location = new System.Drawing.Point(711, 220);
             this.Address_Textbox.Name = "Address_Textbox";
             this.Address_Textbox.PasswordChar = '\0';
-            this.Address_Textbox.PlaceholderText = "";
+            this.Address_Textbox.PlaceholderText = "Type address here";
             this.Address_Textbox.SelectedText = "";
             this.Address_Textbox.Size = new System.Drawing.Size(235, 36);
             this.Address_Textbox.TabIndex = 17;
@@ -244,6 +294,7 @@
             // 
             this.Email_Address_Textbox.Animated = true;
             this.Email_Address_Textbox.AutoRoundedCorners = true;
+            this.Email_Address_Textbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(138)))), ((int)(((byte)(173)))));
             this.Email_Address_Textbox.BorderRadius = 17;
             this.Email_Address_Textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Email_Address_Textbox.DefaultText = "";
@@ -257,7 +308,7 @@
             this.Email_Address_Textbox.Location = new System.Drawing.Point(711, 147);
             this.Email_Address_Textbox.Name = "Email_Address_Textbox";
             this.Email_Address_Textbox.PasswordChar = '\0';
-            this.Email_Address_Textbox.PlaceholderText = "";
+            this.Email_Address_Textbox.PlaceholderText = "Type email here";
             this.Email_Address_Textbox.SelectedText = "";
             this.Email_Address_Textbox.Size = new System.Drawing.Size(235, 36);
             this.Email_Address_Textbox.TabIndex = 16;
@@ -277,6 +328,7 @@
             // 
             this.Gender_Picker.AutoRoundedCorners = true;
             this.Gender_Picker.BackColor = System.Drawing.Color.Transparent;
+            this.Gender_Picker.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(138)))), ((int)(((byte)(173)))));
             this.Gender_Picker.BorderRadius = 17;
             this.Gender_Picker.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.Gender_Picker.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -337,6 +389,7 @@
             // 
             this.Confirm_Password_Textbox.Animated = true;
             this.Confirm_Password_Textbox.AutoRoundedCorners = true;
+            this.Confirm_Password_Textbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(138)))), ((int)(((byte)(173)))));
             this.Confirm_Password_Textbox.BorderRadius = 17;
             this.Confirm_Password_Textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Confirm_Password_Textbox.DefaultText = "";
@@ -350,7 +403,7 @@
             this.Confirm_Password_Textbox.Location = new System.Drawing.Point(427, 293);
             this.Confirm_Password_Textbox.Name = "Confirm_Password_Textbox";
             this.Confirm_Password_Textbox.PasswordChar = '●';
-            this.Confirm_Password_Textbox.PlaceholderText = "";
+            this.Confirm_Password_Textbox.PlaceholderText = "Confirm password here";
             this.Confirm_Password_Textbox.SelectedText = "";
             this.Confirm_Password_Textbox.Size = new System.Drawing.Size(235, 36);
             this.Confirm_Password_Textbox.TabIndex = 28;
@@ -371,6 +424,7 @@
             // 
             this.Country_Textbox.Animated = true;
             this.Country_Textbox.AutoRoundedCorners = true;
+            this.Country_Textbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(138)))), ((int)(((byte)(173)))));
             this.Country_Textbox.BorderRadius = 17;
             this.Country_Textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Country_Textbox.DefaultText = "";
@@ -384,7 +438,7 @@
             this.Country_Textbox.Location = new System.Drawing.Point(711, 368);
             this.Country_Textbox.Name = "Country_Textbox";
             this.Country_Textbox.PasswordChar = '\0';
-            this.Country_Textbox.PlaceholderText = "";
+            this.Country_Textbox.PlaceholderText = "Type country here";
             this.Country_Textbox.SelectedText = "";
             this.Country_Textbox.Size = new System.Drawing.Size(235, 36);
             this.Country_Textbox.TabIndex = 30;
@@ -437,52 +491,6 @@
             this.a.Size = new System.Drawing.Size(130, 13);
             this.a.TabIndex = 35;
             this.a.Text = "Please accept terms and Conditions";
-            // 
-            // guna2HtmlLabel5
-            // 
-            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(146)))));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(147, 417);
-            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(84, 34);
-            this.guna2HtmlLabel5.TabIndex = 12;
-            this.guna2HtmlLabel5.Text = "System";
-            // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(237)))), ((int)(((byte)(146)))));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(53, 374);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(272, 34);
-            this.guna2HtmlLabel3.TabIndex = 11;
-            this.guna2HtmlLabel3.Text = "Employee Management";
-            // 
-            // guna2CirclePictureBox1
-            // 
-            this.guna2CirclePictureBox1.Image = global::Sen_s_final_presentation.Properties.Resources.Exit2;
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(14, 493);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(54, 54);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBox1.TabIndex = 6;
-            this.guna2CirclePictureBox1.TabStop = false;
-            this.guna2CirclePictureBox1.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = global::Sen_s_final_presentation.Properties.Resources.earth_new1;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(31, 57);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(310, 328);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 10;
-            this.guna2PictureBox1.TabStop = false;
             // 
             // Form3
             // 

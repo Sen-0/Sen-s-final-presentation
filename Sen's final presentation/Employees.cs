@@ -13,15 +13,15 @@ using System.Windows.Forms;
 
 namespace Sen_s_final_presentation
 {
-    public partial class Employee : UserControl
+    public partial class Employees : UserControl
     {
-        public Employee()
+        public Employees()
         {
             InitializeComponent();
             BindData();
         }
         SqlConnection conn = new SqlConnection("Data Source=DESKTOP-CPPCSH9\\SQLEXPRESS;Initial Catalog=EMS;Integrated Security=True;Encrypt=False");
-        private void guna2Button1_Click(object sender, EventArgs e)  //insert process
+        private void guna2Button1_Click(object sender, EventArgs e)  //insert EMP
         {
             try
             {
@@ -71,7 +71,7 @@ namespace Sen_s_final_presentation
             sd.Fill(dt);
             guna2DataGridView1.DataSource = dt;
         }
-        private void guna2Button2_Click(object sender, EventArgs e) //update process
+        private void guna2Button2_Click(object sender, EventArgs e) //update EMP
         {
             if  (Employee_IDbox.Text != "" && Employee_Namebox.Text != "" && Employee_Agebox.Text != "" && Employee_emailBox.Text != "" && Employee_Contactnobox.Text != ""
                     && Employee_addressbox.Text != "" && Employee_genderbox.Text != "" && Employee_JobBox.Text != "")
@@ -105,7 +105,7 @@ namespace Sen_s_final_presentation
                 MessageBox.Show("Fill in the blanks.","Error");
             }
         }
-        private void guna2Button3_Click(object sender, EventArgs e)  //delete process
+        private void guna2Button3_Click(object sender, EventArgs e)  //delete EMP
         {
             if
                 (Employee_IDbox.Text != "")

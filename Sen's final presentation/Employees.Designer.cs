@@ -1,6 +1,6 @@
 ﻿namespace Sen_s_final_presentation
 {
-    partial class Employee
+    partial class Employees
     {
         /// <summary> 
         /// Required designer variable.
@@ -182,6 +182,7 @@
             // 
             this.Employee_Agebox.AutoRoundedCorners = true;
             this.Employee_Agebox.BackColor = System.Drawing.Color.Transparent;
+            this.Employee_Agebox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(138)))), ((int)(((byte)(173)))));
             this.Employee_Agebox.BorderRadius = 17;
             this.Employee_Agebox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.Employee_Agebox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -300,6 +301,7 @@
             // 
             this.Employee_JobBox.AutoRoundedCorners = true;
             this.Employee_JobBox.BackColor = System.Drawing.Color.Transparent;
+            this.Employee_JobBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(138)))), ((int)(((byte)(173)))));
             this.Employee_JobBox.BorderRadius = 17;
             this.Employee_JobBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.Employee_JobBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -348,6 +350,7 @@
             // 
             this.Employee_emailBox.Animated = true;
             this.Employee_emailBox.AutoRoundedCorners = true;
+            this.Employee_emailBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(138)))), ((int)(((byte)(173)))));
             this.Employee_emailBox.BorderRadius = 17;
             this.Employee_emailBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Employee_emailBox.DefaultText = "";
@@ -361,7 +364,7 @@
             this.Employee_emailBox.Location = new System.Drawing.Point(43, 278);
             this.Employee_emailBox.Name = "Employee_emailBox";
             this.Employee_emailBox.PasswordChar = '\0';
-            this.Employee_emailBox.PlaceholderText = "";
+            this.Employee_emailBox.PlaceholderText = "Type email here";
             this.Employee_emailBox.SelectedText = "";
             this.Employee_emailBox.Size = new System.Drawing.Size(235, 36);
             this.Employee_emailBox.TabIndex = 42;
@@ -381,6 +384,7 @@
             // 
             this.Employee_genderbox.AutoRoundedCorners = true;
             this.Employee_genderbox.BackColor = System.Drawing.Color.Transparent;
+            this.Employee_genderbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(138)))), ((int)(((byte)(173)))));
             this.Employee_genderbox.BorderRadius = 17;
             this.Employee_genderbox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.Employee_genderbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -435,6 +439,7 @@
             // 
             this.Employee_addressbox.Animated = true;
             this.Employee_addressbox.AutoRoundedCorners = true;
+            this.Employee_addressbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(138)))), ((int)(((byte)(173)))));
             this.Employee_addressbox.BorderRadius = 17;
             this.Employee_addressbox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Employee_addressbox.DefaultText = "";
@@ -448,7 +453,7 @@
             this.Employee_addressbox.Location = new System.Drawing.Point(383, 131);
             this.Employee_addressbox.Name = "Employee_addressbox";
             this.Employee_addressbox.PasswordChar = '\0';
-            this.Employee_addressbox.PlaceholderText = "";
+            this.Employee_addressbox.PlaceholderText = "Type Address here";
             this.Employee_addressbox.SelectedText = "";
             this.Employee_addressbox.Size = new System.Drawing.Size(235, 36);
             this.Employee_addressbox.TabIndex = 35;
@@ -457,6 +462,7 @@
             // 
             this.Employee_Contactnobox.Animated = true;
             this.Employee_Contactnobox.AutoRoundedCorners = true;
+            this.Employee_Contactnobox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(138)))), ((int)(((byte)(173)))));
             this.Employee_Contactnobox.BorderRadius = 17;
             this.Employee_Contactnobox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Employee_Contactnobox.DefaultText = "";
@@ -470,7 +476,7 @@
             this.Employee_Contactnobox.Location = new System.Drawing.Point(383, 58);
             this.Employee_Contactnobox.Name = "Employee_Contactnobox";
             this.Employee_Contactnobox.PasswordChar = '\0';
-            this.Employee_Contactnobox.PlaceholderText = "";
+            this.Employee_Contactnobox.PlaceholderText = "Type contact number here";
             this.Employee_Contactnobox.SelectedText = "";
             this.Employee_Contactnobox.Size = new System.Drawing.Size(235, 36);
             this.Employee_Contactnobox.TabIndex = 34;
@@ -501,6 +507,7 @@
             // 
             this.Employee_Namebox.Animated = true;
             this.Employee_Namebox.AutoRoundedCorners = true;
+            this.Employee_Namebox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(138)))), ((int)(((byte)(173)))));
             this.Employee_Namebox.BorderRadius = 17;
             this.Employee_Namebox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Employee_Namebox.DefaultText = "";
@@ -514,7 +521,7 @@
             this.Employee_Namebox.Location = new System.Drawing.Point(43, 131);
             this.Employee_Namebox.Name = "Employee_Namebox";
             this.Employee_Namebox.PasswordChar = '\0';
-            this.Employee_Namebox.PlaceholderText = "";
+            this.Employee_Namebox.PlaceholderText = "Type name here";
             this.Employee_Namebox.SelectedText = "";
             this.Employee_Namebox.Size = new System.Drawing.Size(235, 36);
             this.Employee_Namebox.TabIndex = 31;
@@ -523,6 +530,7 @@
             // 
             this.Employee_IDbox.Animated = true;
             this.Employee_IDbox.AutoRoundedCorners = true;
+            this.Employee_IDbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(138)))), ((int)(((byte)(173)))));
             this.Employee_IDbox.BorderRadius = 17;
             this.Employee_IDbox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Employee_IDbox.DefaultText = "";
@@ -536,7 +544,7 @@
             this.Employee_IDbox.Location = new System.Drawing.Point(43, 58);
             this.Employee_IDbox.Name = "Employee_IDbox";
             this.Employee_IDbox.PasswordChar = '\0';
-            this.Employee_IDbox.PlaceholderText = "";
+            this.Employee_IDbox.PlaceholderText = "Type ID here";
             this.Employee_IDbox.SelectedText = "";
             this.Employee_IDbox.Size = new System.Drawing.Size(235, 36);
             this.Employee_IDbox.TabIndex = 30;
@@ -571,7 +579,7 @@
             this.guna2DataGridView1.AutoGenerateColumns = false;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Nirmala UI", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(138)))), ((int)(((byte)(173)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -590,7 +598,7 @@
             this.guna2DataGridView1.DataSource = this.eMPLOYEEFIRSTBindingSource1;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Nirmala UI", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Nirmala UI", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(138)))), ((int)(((byte)(173)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
@@ -715,14 +723,14 @@
             // 
             this.eMPLOYEE_FIRSTTableAdapter1.ClearBeforeFill = true;
             // 
-            // Employee
+            // Employees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(138)))), ((int)(((byte)(173)))));
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
-            this.Name = "Employee";
+            this.Name = "Employees";
             this.Size = new System.Drawing.Size(684, 561);
             ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eMPLOYEEFIRSTBindingSource)).EndInit();
