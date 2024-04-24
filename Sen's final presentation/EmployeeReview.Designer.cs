@@ -35,14 +35,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.eMPIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.eMPNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.eMPREVIEWDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.eMPLOYEEFIRSTBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.eMSDataSet5 = new Sen_s_final_presentation.EMSDataSet5();
             this.eMPLOYEEFIRSTBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.eMSDataSet4BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.eMSDataSet4 = new Sen_s_final_presentation.EMSDataSet4();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.ReviewEMPIDbox = new Guna.UI2.WinForms.Guna2TextBox();
@@ -50,26 +43,33 @@
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.ReviewBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.eMPLOYEEFIRSTBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.eMPLOYEEFIRSTBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.eMPIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.eMPNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.eMPREVIEWDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.eMPLOYEEFIRSTBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.eMSDataSet5 = new Sen_s_final_presentation.EMSDataSet5();
+            this.eMSDataSet4BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.eMSDataSet4 = new Sen_s_final_presentation.EMSDataSet4();
+            this.eMSDataSet4BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.eMSDataSet = new Sen_s_final_presentation.EMSDataSet();
             this.eMSDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.eMPLOYEEFIRSTBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.eMPLOYEE_FIRSTTableAdapter = new Sen_s_final_presentation.EMSDataSet4TableAdapters.EMPLOYEE_FIRSTTableAdapter();
-            this.eMSDataSet4BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.eMPLOYEEFIRSTBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.eMPLOYEE_FIRSTTableAdapter1 = new Sen_s_final_presentation.EMSDataSet5TableAdapters.EMPLOYEE_FIRSTTableAdapter();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eMPLOYEEFIRSTBindingSource1)).BeginInit();
+            this.guna2Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.eMPLOYEEFIRSTBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eMPLOYEEFIRSTBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eMPLOYEEFIRSTBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eMPLOYEEFIRSTBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet4BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet4)).BeginInit();
-            this.guna2Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet4BindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eMSDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eMPLOYEEFIRSTBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet4BindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eMPLOYEEFIRSTBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -149,54 +149,10 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // eMPIDDataGridViewTextBoxColumn
-            // 
-            this.eMPIDDataGridViewTextBoxColumn.DataPropertyName = "EMP_ID";
-            this.eMPIDDataGridViewTextBoxColumn.HeaderText = "Employee ID";
-            this.eMPIDDataGridViewTextBoxColumn.Name = "eMPIDDataGridViewTextBoxColumn";
-            this.eMPIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.eMPIDDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // eMPNAMEDataGridViewTextBoxColumn
-            // 
-            this.eMPNAMEDataGridViewTextBoxColumn.DataPropertyName = "EMP_NAME";
-            this.eMPNAMEDataGridViewTextBoxColumn.HeaderText = "Employee Name";
-            this.eMPNAMEDataGridViewTextBoxColumn.Name = "eMPNAMEDataGridViewTextBoxColumn";
-            this.eMPNAMEDataGridViewTextBoxColumn.ReadOnly = true;
-            this.eMPNAMEDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // eMPREVIEWDataGridViewTextBoxColumn
-            // 
-            this.eMPREVIEWDataGridViewTextBoxColumn.DataPropertyName = "EMP_REVIEW";
-            this.eMPREVIEWDataGridViewTextBoxColumn.HeaderText = "Employee Review";
-            this.eMPREVIEWDataGridViewTextBoxColumn.Name = "eMPREVIEWDataGridViewTextBoxColumn";
-            this.eMPREVIEWDataGridViewTextBoxColumn.ReadOnly = true;
-            this.eMPREVIEWDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // eMPLOYEEFIRSTBindingSource3
-            // 
-            this.eMPLOYEEFIRSTBindingSource3.DataMember = "EMPLOYEE_FIRST";
-            this.eMPLOYEEFIRSTBindingSource3.DataSource = this.eMSDataSet5;
-            // 
-            // eMSDataSet5
-            // 
-            this.eMSDataSet5.DataSetName = "EMSDataSet5";
-            this.eMSDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // eMPLOYEEFIRSTBindingSource1
             // 
             this.eMPLOYEEFIRSTBindingSource1.DataMember = "EMPLOYEE_FIRST";
             this.eMPLOYEEFIRSTBindingSource1.DataSource = this.eMSDataSet4BindingSource;
-            // 
-            // eMSDataSet4BindingSource
-            // 
-            this.eMSDataSet4BindingSource.DataSource = this.eMSDataSet4;
-            this.eMSDataSet4BindingSource.Position = 0;
-            // 
-            // eMSDataSet4
-            // 
-            this.eMSDataSet4.DataSetName = "EMSDataSet4";
-            this.eMSDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // guna2Panel2
             // 
@@ -252,6 +208,7 @@
             this.guna2Button2.Animated = true;
             this.guna2Button2.AutoRoundedCorners = true;
             this.guna2Button2.BorderRadius = 21;
+            this.guna2Button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -272,6 +229,7 @@
             this.guna2Button1.Animated = true;
             this.guna2Button1.AutoRoundedCorners = true;
             this.guna2Button1.BorderRadius = 21;
+            this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -321,6 +279,65 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Write Employee Review";
             // 
+            // eMPLOYEEFIRSTBindingSource
+            // 
+            this.eMPLOYEEFIRSTBindingSource.DataMember = "EMPLOYEE_FIRST";
+            this.eMPLOYEEFIRSTBindingSource.DataSource = this.eMSDataSet4BindingSource;
+            // 
+            // eMPLOYEEFIRSTBindingSource2
+            // 
+            this.eMPLOYEEFIRSTBindingSource2.DataMember = "EMPLOYEE_FIRST";
+            this.eMPLOYEEFIRSTBindingSource2.DataSource = this.eMSDataSet4BindingSource1;
+            // 
+            // eMPIDDataGridViewTextBoxColumn
+            // 
+            this.eMPIDDataGridViewTextBoxColumn.DataPropertyName = "EMP_ID";
+            this.eMPIDDataGridViewTextBoxColumn.HeaderText = "Employee ID";
+            this.eMPIDDataGridViewTextBoxColumn.Name = "eMPIDDataGridViewTextBoxColumn";
+            this.eMPIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.eMPIDDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // eMPNAMEDataGridViewTextBoxColumn
+            // 
+            this.eMPNAMEDataGridViewTextBoxColumn.DataPropertyName = "EMP_NAME";
+            this.eMPNAMEDataGridViewTextBoxColumn.HeaderText = "Employee Name";
+            this.eMPNAMEDataGridViewTextBoxColumn.Name = "eMPNAMEDataGridViewTextBoxColumn";
+            this.eMPNAMEDataGridViewTextBoxColumn.ReadOnly = true;
+            this.eMPNAMEDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // eMPREVIEWDataGridViewTextBoxColumn
+            // 
+            this.eMPREVIEWDataGridViewTextBoxColumn.DataPropertyName = "EMP_REVIEW";
+            this.eMPREVIEWDataGridViewTextBoxColumn.HeaderText = "Employee Review";
+            this.eMPREVIEWDataGridViewTextBoxColumn.Name = "eMPREVIEWDataGridViewTextBoxColumn";
+            this.eMPREVIEWDataGridViewTextBoxColumn.ReadOnly = true;
+            this.eMPREVIEWDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // eMPLOYEEFIRSTBindingSource3
+            // 
+            this.eMPLOYEEFIRSTBindingSource3.DataMember = "EMPLOYEE_FIRST";
+            this.eMPLOYEEFIRSTBindingSource3.DataSource = this.eMSDataSet5;
+            // 
+            // eMSDataSet5
+            // 
+            this.eMSDataSet5.DataSetName = "EMSDataSet5";
+            this.eMSDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // eMSDataSet4BindingSource
+            // 
+            this.eMSDataSet4BindingSource.DataSource = this.eMSDataSet4;
+            this.eMSDataSet4BindingSource.Position = 0;
+            // 
+            // eMSDataSet4
+            // 
+            this.eMSDataSet4.DataSetName = "EMSDataSet4";
+            this.eMSDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // eMSDataSet4BindingSource1
+            // 
+            this.eMSDataSet4BindingSource1.DataSource = this.eMSDataSet4;
+            this.eMSDataSet4BindingSource1.Position = 0;
+            // 
             // eMSDataSet
             // 
             this.eMSDataSet.DataSetName = "EMSDataSet";
@@ -331,24 +348,9 @@
             this.eMSDataSetBindingSource.DataSource = this.eMSDataSet;
             this.eMSDataSetBindingSource.Position = 0;
             // 
-            // eMPLOYEEFIRSTBindingSource
-            // 
-            this.eMPLOYEEFIRSTBindingSource.DataMember = "EMPLOYEE_FIRST";
-            this.eMPLOYEEFIRSTBindingSource.DataSource = this.eMSDataSet4BindingSource;
-            // 
             // eMPLOYEE_FIRSTTableAdapter
             // 
             this.eMPLOYEE_FIRSTTableAdapter.ClearBeforeFill = true;
-            // 
-            // eMSDataSet4BindingSource1
-            // 
-            this.eMSDataSet4BindingSource1.DataSource = this.eMSDataSet4;
-            this.eMSDataSet4BindingSource1.Position = 0;
-            // 
-            // eMPLOYEEFIRSTBindingSource2
-            // 
-            this.eMPLOYEEFIRSTBindingSource2.DataMember = "EMPLOYEE_FIRST";
-            this.eMPLOYEEFIRSTBindingSource2.DataSource = this.eMSDataSet4BindingSource1;
             // 
             // eMPLOYEE_FIRSTTableAdapter1
             // 
@@ -365,18 +367,18 @@
             this.Size = new System.Drawing.Size(684, 561);
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eMPLOYEEFIRSTBindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eMPLOYEEFIRSTBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet4BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet4)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.eMPLOYEEFIRSTBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eMPLOYEEFIRSTBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eMPLOYEEFIRSTBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet4BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet4BindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eMSDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eMPLOYEEFIRSTBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet4BindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eMPLOYEEFIRSTBindingSource2)).EndInit();
             this.ResumeLayout(false);
 
         }

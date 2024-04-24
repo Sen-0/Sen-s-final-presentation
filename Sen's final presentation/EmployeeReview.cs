@@ -19,27 +19,30 @@ namespace Sen_s_final_presentation
             BindData();
         }
         SqlConnection conn = new SqlConnection("Data Source=DESKTOP-CPPCSH9\\SQLEXPRESS;Initial Catalog=EMS;Integrated Security=True;Encrypt=False");
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e) //emp review add
         {
             try
             {
                 if (ReviewBox.Text != "" && ReviewEMPIDbox.Text != "")
                 {
-                    conn.Open();
-                    String BaseQuery = "UPDATE EMPLOYEE_FIRST SET EMP_REVIEW = @EMP_REVIEW";
-                    String Condition = $"WHERE EMP_ID={ReviewEMPIDbox.Text}";
-                    SqlCommand command = new SqlCommand($"{BaseQuery} {Condition}", conn);
-                    command.Parameters.AddWithValue("@EMP_ID", int.Parse(ReviewEMPIDbox.Text));
-                    command.Parameters.AddWithValue("@EMP_REVIEW", ReviewBox.Text);
-                    command.ExecuteNonQuery();
-                    conn.Close();
-                    BindData();
-                    MessageBox.Show("Review Updated Successfully.", "Review Added");
-                    ReviewBox.Text = "";
+                    if (MessageBox.Show("Are you sure you want to add record?", "Add record", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    {
+                        conn.Open();
+                        String BaseQuery = "UPDATE EMPLOYEE_FIRST SET EMP_REVIEW = @EMP_REVIEW";
+                        String Condition = $"WHERE EMP_ID={ReviewEMPIDbox.Text}";
+                        SqlCommand command = new SqlCommand($"{BaseQuery} {Condition}", conn);
+                        command.Parameters.AddWithValue("@EMP_ID", int.Parse(ReviewEMPIDbox.Text));
+                        command.Parameters.AddWithValue("@EMP_REVIEW", ReviewBox.Text);
+                        command.ExecuteNonQuery();
+                        conn.Close();
+                        BindData();
+                        MessageBox.Show("Review Updated Successfully.", "Successful");
+                        ReviewBox.Text = "";
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Fill in the blanks.", "Add Value");
+                    MessageBox.Show("Fill in the blanks.", "Error");
                 }
             }
             catch (Exception ex)
@@ -56,7 +59,7 @@ namespace Sen_s_final_presentation
             guna2DataGridView1.DataSource = dt;
 
         }
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void guna2Button2_Click(object sender, EventArgs e) //emp review clearing
         {
             if
                 (ReviewEMPIDbox.Text != "")
@@ -72,15 +75,14 @@ namespace Sen_s_final_presentation
                         command.ExecuteNonQuery();
                         conn.Close();
                         BindData();
-                        MessageBox.Show("Data successfully deleted!", "Data Cleared");
-
+                        MessageBox.Show("Data successfully deleted!", "Successful");
                         ReviewEMPIDbox.Text = "";
                     }
                 }
             }
             else
             {
-                MessageBox.Show("Put Employee ID.", "Insert ID");
+                MessageBox.Show("Insert Employee ID.", "Error");
             }
         }
     }

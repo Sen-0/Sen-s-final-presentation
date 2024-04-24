@@ -26,32 +26,36 @@ namespace Sen_s_final_presentation
             try
             {
                 if (Employee_IDbox.Text != "" && Employee_Namebox.Text != "" && Employee_Agebox.Text != "" && Employee_emailBox.Text != "" && Employee_Contactnobox.Text != ""
-                    && Employee_addressbox.Text != "" && Employee_genderbox.Text != "" && Employee_JobBox.Text != "")
+                    && Employee_addressbox.Text != "" && Employee_genderbox.Text != "" && Employee_JobBox.Text != "") //if the boxes are empty
                 {
-                    conn.Open();
-                    SqlCommand command = new SqlCommand("INSERT INTO EMPLOYEE_FIRST VALUES (@EMP_ID,@EMP_NAME,@EMP_AGE, " +
-                        "@EMP_EMAIL, @EMP_CONTACT, @EMP_ADDRESS, @EMP_GENDER, @EMP_JOB_POSITION, @EMP_SALARY )", conn);
-                    command.Parameters.AddWithValue("@EMP_ID", int.Parse(Employee_IDbox.Text));
-                    command.Parameters.AddWithValue("@EMP_NAME", Employee_Namebox.Text);
-                    command.Parameters.AddWithValue("@EMP_AGE", int.Parse(Employee_Agebox.Text));
-                    command.Parameters.AddWithValue("@EMP_EMAIL", Employee_emailBox.Text);
-                    command.Parameters.AddWithValue("@EMP_CONTACT", int.Parse(Employee_Contactnobox.Text));
-                    command.Parameters.AddWithValue("@EMP_ADDRESS", Employee_addressbox.Text);
-                    command.Parameters.AddWithValue("@EMP_GENDER", Employee_genderbox.Text);
-                    command.Parameters.AddWithValue("@EMP_JOB_POSITION", Employee_JobBox.Text);
-                    command.Parameters.AddWithValue("@EMP_SALARY", 0);
-                    command.ExecuteNonQuery();
-                    conn.Close();
-                    BindData();
-                    MessageBox.Show("Data inserted Successfully.","Data");
-                    Employee_IDbox.Text = "";
-                    Employee_Namebox.Text = "";
-                    Employee_Agebox.Text = "";
-                    Employee_emailBox.Text = "";
-                    Employee_Contactnobox.Text = "";
-                    Employee_addressbox.Text = "";
-                    Employee_genderbox.Text = "";
-                    Employee_JobBox.Text = "";
+                    if (MessageBox.Show("Are you sure you want to add new employee?", "Add Record", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    {
+                        conn.Open();
+                        SqlCommand command = new SqlCommand("INSERT INTO EMPLOYEE_FIRST VALUES (@EMP_ID,@EMP_NAME,@EMP_AGE, " +
+                            "@EMP_EMAIL, @EMP_CONTACT, @EMP_ADDRESS, @EMP_GENDER, @EMP_JOB_POSITION, @EMP_SALARY ,@EMP_REVIEW )", conn);
+                        command.Parameters.AddWithValue("@EMP_ID", int.Parse(Employee_IDbox.Text));
+                        command.Parameters.AddWithValue("@EMP_NAME", Employee_Namebox.Text);
+                        command.Parameters.AddWithValue("@EMP_AGE", int.Parse(Employee_Agebox.Text));
+                        command.Parameters.AddWithValue("@EMP_EMAIL", Employee_emailBox.Text);
+                        command.Parameters.AddWithValue("@EMP_CONTACT", int.Parse(Employee_Contactnobox.Text));
+                        command.Parameters.AddWithValue("@EMP_ADDRESS", Employee_addressbox.Text);
+                        command.Parameters.AddWithValue("@EMP_GENDER", Employee_genderbox.Text);
+                        command.Parameters.AddWithValue("@EMP_JOB_POSITION", Employee_JobBox.Text);
+                        command.Parameters.AddWithValue("@EMP_SALARY", 0);
+                        command.Parameters.AddWithValue("@EMP_REVIEW", "");
+                        command.ExecuteNonQuery();
+                        conn.Close();
+                        BindData();
+                        MessageBox.Show("Data inserted Successfully.", "Successful");
+                        Employee_IDbox.Text = "";
+                        Employee_Namebox.Text = "";
+                        Employee_Agebox.Text = "";
+                        Employee_emailBox.Text = "";
+                        Employee_Contactnobox.Text = "";
+                        Employee_addressbox.Text = "";
+                        Employee_genderbox.Text = "";
+                        Employee_JobBox.Text = "";
+                    }
                 }
                 else
                 {
@@ -76,29 +80,32 @@ namespace Sen_s_final_presentation
             if  (Employee_IDbox.Text != "" && Employee_Namebox.Text != "" && Employee_Agebox.Text != "" && Employee_emailBox.Text != "" && Employee_Contactnobox.Text != ""
                     && Employee_addressbox.Text != "" && Employee_genderbox.Text != "" && Employee_JobBox.Text != "")
             {
-                conn.Open();
-                String BaseQuery = "UPDATE EMPLOYEE_FIRST SET EMP_NAME = @EMP_NAME, EMP_AGE = @EMP_AGE, EMP_EMAIL =  @EMP_EMAIL, EMP_CONTACT = @EMP_CONTACT, EMP_ADDRESS = @EMP_ADDRESS, EMP_GENDER = @EMP_GENDER, EMP_JOB_POSITION = @EMP_JOB_POSITION";
-                String Condition = $"WHERE EMP_ID=${int.Parse(Employee_IDbox.Text)}";
-                SqlCommand command = new SqlCommand($"{BaseQuery} {Condition}", conn);
-                command.Parameters.AddWithValue("@EMP_NAME", Employee_Namebox.Text);
-                command.Parameters.AddWithValue("@EMP_AGE", int.Parse(Employee_Agebox.Text));
-                command.Parameters.AddWithValue("@EMP_EMAIL", Employee_emailBox.Text);
-                command.Parameters.AddWithValue("@EMP_CONTACT", int.Parse(Employee_Contactnobox.Text));
-                command.Parameters.AddWithValue("@EMP_ADDRESS", Employee_addressbox.Text);
-                command.Parameters.AddWithValue("@EMP_GENDER", Employee_genderbox.Text);
-                command.Parameters.AddWithValue("@EMP_JOB_POSITION", Employee_JobBox.Text);
-                command.ExecuteNonQuery();
-                conn.Close();
-                BindData();
-                MessageBox.Show("Data Updated Successfully.", "Data");
-                Employee_IDbox.Text = "";
-                Employee_Namebox.Text = "";
-                Employee_Agebox.Text = "";
-                Employee_emailBox.Text = "";
-                Employee_Contactnobox.Text = "";
-                Employee_addressbox.Text = "";
-                Employee_genderbox.Text = "";
-                Employee_JobBox.Text = "";
+                if (MessageBox.Show("Are you sure you want to update record?", "Update Record", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    conn.Open();
+                    String BaseQuery = "UPDATE EMPLOYEE_FIRST SET EMP_NAME = @EMP_NAME, EMP_AGE = @EMP_AGE, EMP_EMAIL =  @EMP_EMAIL, EMP_CONTACT = @EMP_CONTACT, EMP_ADDRESS = @EMP_ADDRESS, EMP_GENDER = @EMP_GENDER, EMP_JOB_POSITION = @EMP_JOB_POSITION";
+                    String Condition = $"WHERE EMP_ID=${int.Parse(Employee_IDbox.Text)}";
+                    SqlCommand command = new SqlCommand($"{BaseQuery} {Condition}", conn);
+                    command.Parameters.AddWithValue("@EMP_NAME", Employee_Namebox.Text);
+                    command.Parameters.AddWithValue("@EMP_AGE", int.Parse(Employee_Agebox.Text));
+                    command.Parameters.AddWithValue("@EMP_EMAIL", Employee_emailBox.Text);
+                    command.Parameters.AddWithValue("@EMP_CONTACT", int.Parse(Employee_Contactnobox.Text));
+                    command.Parameters.AddWithValue("@EMP_ADDRESS", Employee_addressbox.Text);
+                    command.Parameters.AddWithValue("@EMP_GENDER", Employee_genderbox.Text);
+                    command.Parameters.AddWithValue("@EMP_JOB_POSITION", Employee_JobBox.Text);
+                    command.ExecuteNonQuery();
+                    conn.Close();
+                    BindData();
+                    MessageBox.Show("Data Updated Successfully.", "Successful");
+                    Employee_IDbox.Text = "";
+                    Employee_Namebox.Text = "";
+                    Employee_Agebox.Text = "";
+                    Employee_emailBox.Text = "";
+                    Employee_Contactnobox.Text = "";
+                    Employee_addressbox.Text = "";
+                    Employee_genderbox.Text = null;
+                    Employee_JobBox.Text = "";
+                }
             }
             else
             {
@@ -123,7 +130,7 @@ namespace Sen_s_final_presentation
             }
             else
             {
-                MessageBox.Show("Put Employee ID.","Error");
+                MessageBox.Show("Insert Employee ID.","Error");
             }
         }
     }

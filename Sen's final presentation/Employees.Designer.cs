@@ -33,9 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.eMSDataSet = new Sen_s_final_presentation.EMSDataSet();
-            this.eMPLOYEEFIRSTBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.eMPLOYEE_FIRSTTableAdapter = new Sen_s_final_presentation.EMSDataSetTableAdapters.EMPLOYEE_FIRSTTableAdapter();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
@@ -59,39 +56,28 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.EMP_EMAIL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EMP_GENDER = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.eMPIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.eMPNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.eMPAGEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EMP_EMAIL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.eMPCONTACTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.eMPADDRESSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EMP_GENDER = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.eMPJOBPOSITIONDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.eMPLOYEEFIRSTBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.eMSDataSet1 = new Sen_s_final_presentation.EMSDataSet1();
+            this.eMSDataSet = new Sen_s_final_presentation.EMSDataSet();
+            this.eMPLOYEEFIRSTBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.eMPLOYEE_FIRSTTableAdapter = new Sen_s_final_presentation.EMSDataSetTableAdapters.EMPLOYEE_FIRSTTableAdapter();
             this.eMPLOYEE_FIRSTTableAdapter1 = new Sen_s_final_presentation.EMSDataSet1TableAdapters.EMPLOYEE_FIRSTTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eMPLOYEEFIRSTBindingSource)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eMPLOYEEFIRSTBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eMPLOYEEFIRSTBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // eMSDataSet
-            // 
-            this.eMSDataSet.DataSetName = "EMSDataSet";
-            this.eMSDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // eMPLOYEEFIRSTBindingSource
-            // 
-            this.eMPLOYEEFIRSTBindingSource.DataMember = "EMPLOYEE_FIRST";
-            this.eMPLOYEEFIRSTBindingSource.DataSource = this.eMSDataSet;
-            // 
-            // eMPLOYEE_FIRSTTableAdapter
-            // 
-            this.eMPLOYEE_FIRSTTableAdapter.ClearBeforeFill = true;
             // 
             // guna2Panel1
             // 
@@ -126,6 +112,7 @@
             this.guna2Button3.Animated = true;
             this.guna2Button3.AutoRoundedCorners = true;
             this.guna2Button3.BorderRadius = 21;
+            this.guna2Button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -145,6 +132,7 @@
             this.guna2Button2.Animated = true;
             this.guna2Button2.AutoRoundedCorners = true;
             this.guna2Button2.BorderRadius = 21;
+            this.guna2Button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -164,6 +152,7 @@
             this.guna2Button1.Animated = true;
             this.guna2Button1.AutoRoundedCorners = true;
             this.guna2Button1.BorderRadius = 21;
+            this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -184,6 +173,7 @@
             this.Employee_Agebox.BackColor = System.Drawing.Color.Transparent;
             this.Employee_Agebox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(138)))), ((int)(((byte)(173)))));
             this.Employee_Agebox.BorderRadius = 17;
+            this.Employee_Agebox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Employee_Agebox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.Employee_Agebox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Employee_Agebox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -303,6 +293,7 @@
             this.Employee_JobBox.BackColor = System.Drawing.Color.Transparent;
             this.Employee_JobBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(138)))), ((int)(((byte)(173)))));
             this.Employee_JobBox.BorderRadius = 17;
+            this.Employee_JobBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Employee_JobBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.Employee_JobBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Employee_JobBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -386,6 +377,7 @@
             this.Employee_genderbox.BackColor = System.Drawing.Color.Transparent;
             this.Employee_genderbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(138)))), ((int)(((byte)(173)))));
             this.Employee_genderbox.BorderRadius = 17;
+            this.Employee_genderbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Employee_genderbox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.Employee_genderbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Employee_genderbox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -645,6 +637,22 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(138)))), ((int)(((byte)(173)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
+            // EMP_EMAIL
+            // 
+            this.EMP_EMAIL.DataPropertyName = "EMP_EMAIL";
+            this.EMP_EMAIL.HeaderText = "Employee Email";
+            this.EMP_EMAIL.Name = "EMP_EMAIL";
+            this.EMP_EMAIL.ReadOnly = true;
+            this.EMP_EMAIL.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // EMP_GENDER
+            // 
+            this.EMP_GENDER.DataPropertyName = "EMP_GENDER";
+            this.EMP_GENDER.HeaderText = "Employee Gender";
+            this.EMP_GENDER.Name = "EMP_GENDER";
+            this.EMP_GENDER.ReadOnly = true;
+            this.EMP_GENDER.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
             // eMPIDDataGridViewTextBoxColumn
             // 
             this.eMPIDDataGridViewTextBoxColumn.DataPropertyName = "EMP_ID";
@@ -669,14 +677,6 @@
             this.eMPAGEDataGridViewTextBoxColumn.ReadOnly = true;
             this.eMPAGEDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // EMP_EMAIL
-            // 
-            this.EMP_EMAIL.DataPropertyName = "EMP_EMAIL";
-            this.EMP_EMAIL.HeaderText = "Employee Email";
-            this.EMP_EMAIL.Name = "EMP_EMAIL";
-            this.EMP_EMAIL.ReadOnly = true;
-            this.EMP_EMAIL.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
             // eMPCONTACTDataGridViewTextBoxColumn
             // 
             this.eMPCONTACTDataGridViewTextBoxColumn.DataPropertyName = "EMP_CONTACT";
@@ -692,14 +692,6 @@
             this.eMPADDRESSDataGridViewTextBoxColumn.Name = "eMPADDRESSDataGridViewTextBoxColumn";
             this.eMPADDRESSDataGridViewTextBoxColumn.ReadOnly = true;
             this.eMPADDRESSDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // EMP_GENDER
-            // 
-            this.EMP_GENDER.DataPropertyName = "EMP_GENDER";
-            this.EMP_GENDER.HeaderText = "Employee Gender";
-            this.EMP_GENDER.Name = "EMP_GENDER";
-            this.EMP_GENDER.ReadOnly = true;
-            this.EMP_GENDER.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // eMPJOBPOSITIONDataGridViewTextBoxColumn
             // 
@@ -719,6 +711,20 @@
             this.eMSDataSet1.DataSetName = "EMSDataSet1";
             this.eMSDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // eMSDataSet
+            // 
+            this.eMSDataSet.DataSetName = "EMSDataSet";
+            this.eMSDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // eMPLOYEEFIRSTBindingSource
+            // 
+            this.eMPLOYEEFIRSTBindingSource.DataMember = "EMPLOYEE_FIRST";
+            this.eMPLOYEEFIRSTBindingSource.DataSource = this.eMSDataSet;
+            // 
+            // eMPLOYEE_FIRSTTableAdapter
+            // 
+            this.eMPLOYEE_FIRSTTableAdapter.ClearBeforeFill = true;
+            // 
             // eMPLOYEE_FIRSTTableAdapter1
             // 
             this.eMPLOYEE_FIRSTTableAdapter1.ClearBeforeFill = true;
@@ -732,14 +738,14 @@
             this.Controls.Add(this.guna2Panel1);
             this.Name = "Employees";
             this.Size = new System.Drawing.Size(684, 561);
-            ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eMPLOYEEFIRSTBindingSource)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eMPLOYEEFIRSTBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eMPLOYEEFIRSTBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -25,9 +25,10 @@ namespace Sen_s_final_presentation
                 {
                     if (Employee_IDbox.Text != "" && Salary_Box.Text != "")
                     {
-
+                      if (MessageBox.Show("Are you sure you want to Update record?", "Update Record", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                      {
                         conn.Open();
-                        String BaseQuery = "UPDATE EMPLOYEE_FIRST SET  EMP_SALARY = @EMP_SALARY" ;
+                        String BaseQuery = "UPDATE EMPLOYEE_FIRST SET  EMP_SALARY = @EMP_SALARY";
                         String Condition = $"WHERE EMP_ID=${int.Parse(Employee_IDbox.Text)}";
                         SqlCommand command = new SqlCommand($"{BaseQuery} {Condition}", conn);
                         command.Parameters.AddWithValue("@EMP_ID", int.Parse(Employee_IDbox.Text));
@@ -35,13 +36,14 @@ namespace Sen_s_final_presentation
                         command.ExecuteNonQuery();
                         conn.Close();
                         BindData();
-                        MessageBox.Show("Salary Updated Successfully.","Salary Added");
+                        MessageBox.Show("Salary Updated Successfully.", "Salary Added");
                         Employee_IDbox.Text = "";
                         Salary_Box.Text = "";
+                      }
                 }
                     else
                     {
-                        MessageBox.Show("Fill in the blanks.", "Add Value");
+                        MessageBox.Show("Fill in the blanks.", "Error");
                     }
                 }
                 catch
@@ -84,7 +86,7 @@ namespace Sen_s_final_presentation
             }
             else
             {
-                MessageBox.Show("Put Employee ID.","Insert ID");
+                MessageBox.Show("Insert Employee ID.","Error");
             }
         }
     }

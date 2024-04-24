@@ -53,7 +53,7 @@ namespace Sen_s_final_presentation
                 else
                 {
                     //this will clear out the text boxes
-                    MessageBox.Show("Wrong Username or Password", "Try again");
+                    MessageBox.Show("Wrong Username or Password.", "Try again");
                     guna2TextBox1.Clear();
                     guna2TextBox2.Clear();
                     //to focus
@@ -69,6 +69,10 @@ namespace Sen_s_final_presentation
             {
                 conn.Close();
             }
+        }
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

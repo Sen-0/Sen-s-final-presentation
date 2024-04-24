@@ -22,15 +22,13 @@ namespace Sen_s_final_presentation
             form1.Show();
             this.Hide();
         }
-
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            this.dashboard1.UpdateEmployee(); //shows dashB
+            this.dashboard1.UpdateEmployee(); //shows dash
             dashboard1.Visible = true;
             employee1.Visible = false;
             salary1.Visible = false;
             EmployeeReview1.Visible = false;
-
         }
         private void guna2Button2_Click(object sender, EventArgs e)
         {
@@ -46,13 +44,16 @@ namespace Sen_s_final_presentation
             salary1.Visible = true;
             EmployeeReview1.Visible = false;
         }
-
         private void guna2Button1_Click_1(object sender, EventArgs e)
         {
-            dashboard1.Visible = false;
+            dashboard1.Visible = false; //shows review
             employee1.Visible = false;
             salary1.Visible = false;
             EmployeeReview1.Visible = true;
+        }
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

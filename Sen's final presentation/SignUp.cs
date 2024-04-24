@@ -44,31 +44,33 @@ namespace Sen_s_final_presentation
                         MessageBox.Show("Password Do Not Match!", "Error");
                         return;
                     }
-          
-                    conn.Open();
-                    SqlCommand command = new SqlCommand("INSERT INTO Login_first VALUES (@User_name,@Password, " +
-                        "@Email, @Address, @B_Date, @Gender, @Country )", conn);
-                    command.Parameters.AddWithValue("@User_name", User_Name_Textbox.Text);
-                    command.Parameters.AddWithValue("@B_Date", BirthDate_picker.Value);
-                    command.Parameters.AddWithValue("@Gender", Gender_Picker.Text);
-                    command.Parameters.AddWithValue("@Country", Country_Textbox.Text);
-                    command.Parameters.AddWithValue("@Address", Address_Textbox.Text);
-                    command.Parameters.AddWithValue("@Email", Email_Address_Textbox.Text);
-                    command.Parameters.AddWithValue("@Password", Password_Textbox.Text);
-                    command.ExecuteNonQuery();
-                    conn.Close();
-                    MessageBox.Show("Registered Successfully!","Completed");
-                    User_Name_Textbox.Text = "";
-                    BirthDate_picker.Text = "";
-                    Gender_Picker.Text = "";
-                    Country_Textbox.Text = "";
-                    Address_Textbox.Text = "";
-                    Email_Address_Textbox.Text = "";
-                    Password_Textbox.Text = "";
-                    Confirm_Password_Textbox.Text = "";
-                    Login form2 = new Login(); //after confirmed, goes to the login
-                    form2.Show();
-                    this.Close();
+                    if (MessageBox.Show("Are you sure you want to register?", "Creating an account", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    {
+                        conn.Open();
+                        SqlCommand command = new SqlCommand("INSERT INTO Login_first VALUES (@User_name,@Password, " +
+                            "@Email, @Address, @B_Date, @Gender, @Country )", conn);
+                        command.Parameters.AddWithValue("@User_name", User_Name_Textbox.Text);
+                        command.Parameters.AddWithValue("@B_Date", BirthDate_picker.Value);
+                        command.Parameters.AddWithValue("@Gender", Gender_Picker.Text);
+                        command.Parameters.AddWithValue("@Country", Country_Textbox.Text);
+                        command.Parameters.AddWithValue("@Address", Address_Textbox.Text);
+                        command.Parameters.AddWithValue("@Email", Email_Address_Textbox.Text);
+                        command.Parameters.AddWithValue("@Password", Password_Textbox.Text);
+                        command.ExecuteNonQuery();
+                        conn.Close();
+                        MessageBox.Show("Registered Successfully!", "Completed");
+                        User_Name_Textbox.Text = "";
+                        BirthDate_picker.Text = "";
+                        Gender_Picker.Text = "";
+                        Country_Textbox.Text = "";
+                        Address_Textbox.Text = "";
+                        Email_Address_Textbox.Text = "";
+                        Password_Textbox.Text = "";
+                        Confirm_Password_Textbox.Text = "";
+                        Login form2 = new Login(); //after confirmed, goes to the login
+                        form2.Show();
+                        this.Close();
+                    }
 
                 }
                 else
@@ -83,7 +85,7 @@ namespace Sen_s_final_presentation
         }
         private void guna2CustomRadioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            if (guna2CustomRadioButton1.Checked)
+            if (guna2CustomRadioButton1.Checked) //this will make sure terms are agreed
             {
                 Signup_btn.Enabled = true;
             }
@@ -95,6 +97,10 @@ namespace Sen_s_final_presentation
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"); //terms
+        }
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close(); //exit
         }
     }
 }
