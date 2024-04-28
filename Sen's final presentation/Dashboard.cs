@@ -32,7 +32,7 @@ namespace Sen_s_final_presentation
             while (reader.Read())
             {
                 Count = Convert.ToInt32(reader.GetValue(0).ToString());
-                Tot_emp_label.Text = Count.ToString(); //connected the count to label
+                Tot_emp_label.Text = Count.ToString(); //connected the count to label in dashboard
             }
             sqlConnection.Close();
             return Count;
